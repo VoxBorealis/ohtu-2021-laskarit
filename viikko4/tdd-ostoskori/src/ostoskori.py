@@ -43,8 +43,8 @@ class Ostoskori:
             else: self._kori.pop(poistettava.nimi)
 
     def tyhjenna(self):
-        pass
         # tyhjentää ostoskorin
+        self._kori.clear()
 
     def ostokset(self):
         # palauttaa listan jossa on korissa olevat ostos-oliot

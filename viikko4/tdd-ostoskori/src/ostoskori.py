@@ -5,7 +5,6 @@ from ostos import Ostos
 class Ostoskori:
     def __init__(self):
         # ostoskori tallettaa Ostos-oliota, yhden per korissa oleva Tuote
-        #self._kori = []
         self._kori = {}
 
     def tavaroita_korissa(self):
@@ -26,9 +25,6 @@ class Ostoskori:
 
     def lisaa_tuote(self, lisattava: Tuote):
         # lisää tuotteen
-        #if self._kori.
-        #self._kori.append(Ostos(lisattava))
-        # hash
         if not self._kori.get(lisattava.nimi):
             self._kori[lisattava.nimi] = Ostos(lisattava)
         else:

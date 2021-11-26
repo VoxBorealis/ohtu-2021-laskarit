@@ -4,7 +4,6 @@ from kirjanpito import kirjanpito
 
 def main():
     kauppa = Kauppa()
-    
 
     # kauppa hoitaa yhden asiakkaan kerrallaan seuraavaan tapaan:
     kauppa.aloita_asiointi()
